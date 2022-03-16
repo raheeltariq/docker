@@ -200,7 +200,7 @@ function Copy-ReferenceFile($file) {
         if([System.String]::IsNullOrWhiteSpace($reason)) {
             Add-Content -Path $COPY_REFERENCE_FILE_LOG -Value "$action $rel"
         } else {
-            Add-Content -Path $COPY_REFERENCE_FILE_LOG -Value "$action $rel : $reason"
+            Add-Content -Path $COPY_REFERENCE_FILE_LOG -Value "$action $rel : $change"
         }
     }
 }
